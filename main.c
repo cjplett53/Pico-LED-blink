@@ -14,8 +14,8 @@
 
 #define LED_PIN 18
 
-void delay() {
-    for (volatile int i = 0; i < 300000; i++);
+void dot() {
+    for (volatile int i = 0; i < 1850000; i++);
 }
 
 int main() {
@@ -31,9 +31,9 @@ int main() {
 
     while (1) {
         SIO_GPIO_OUT_SET = 1 << LED_PIN;
-        delay();
+        dot();
 
         SIO_GPIO_OUT_CLR = 1 << LED_PIN;
-        delay();
+        dot();
     }
 }
