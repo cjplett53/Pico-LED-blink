@@ -8,6 +8,8 @@ pico_sdk_init()
 
 add_executable(blink
 	main.c
+	led.c
+	morse.c
 )
 
 target_link_libraries(blink pico_stdlib)
