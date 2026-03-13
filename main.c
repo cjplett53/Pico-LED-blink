@@ -16,6 +16,6 @@ int main() {
 
     while (1) {
         // Send message
-        send_morse_string("hello world");
+        send_morse_string("test");
     }
 }
